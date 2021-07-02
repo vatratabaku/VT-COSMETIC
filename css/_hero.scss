@@ -1,0 +1,37 @@
+.hero{
+   
+    margin-top: 10px;
+    height: 540px;
+    background: cover no-repeat ;
+    
+    font-family: $font1;
+    position: relative;
+    
+
+    img{
+        width: 100%;
+        height: 450px;
+        position: relative;
+        object-fit: cover;
+  }
+ 
+ 
+    
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-family: $font2;
+    font-size: 30px;
+    font-weight: 200;
+}
+@media screen and (max-width:900px){
+    .hero{
+        width: 100%;
+        height: 360px;
+        img{
+            height: 360px;
+            object-fit: cover;
+        }
+    }
+}

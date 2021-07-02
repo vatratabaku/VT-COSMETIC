@@ -1,0 +1,120 @@
+@import "./mixin";
+@import "./header";
+@import "./nav";
+@import "./navbar";
+@import "./footer";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 195px 0;
+   
+    .card{
+       display: flex;
+       flex-direction: column;
+       width: 300px;
+       height: 550px;
+       align-items: center;
+       &:hover{
+         margin: 40px;
+         transition: 0.9s;
+      }
+       
+       img{
+         width: 280px;
+         object-fit: cover;
+        
+       }
+       h3{
+          font-family: $font1;
+          margin-top: 6px;
+          margin-bottom:4px ;
+       }
+       p{
+          font-family: $font3;
+          font-weight: 600;
+          text-align: center;
+          margin-right: 45px;
+          margin-left: -17px;
+          font-size: 18px;
+       }
+       .btn{
+         margin: auto;
+         border: 2px solid $second-color;
+         width: 280px;
+         height: 40px;
+         display: flex;
+         justify-content: center;
+         padding:  0;
+         align-items: center;
+         letter-spacing: 5px;
+         a{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: $second-color;
+            font-family: $font1;
+            padding: 9px 0px;
+
+           &:hover{
+              color: white;
+          } 
+      }
+      &:hover{
+            background-color: $second-color;
+      }
+   }
+    }
+ }
+ .numbers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
+   .pagination {
+     
+     display: inline-block;
+     a{
+        color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: $font3;
+      font-weight: 600;
+      &:hover{
+         background: $second-color;
+         color: white;
+      }
+  
+     }
+   }
+  }
+  @media screen and (max-width:768px){
+
+  .products{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+
+      .card{
+          margin: 80px;
+      }
+  }
+    
+        
+ 
+    
+   
+ }

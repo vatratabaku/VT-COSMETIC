@@ -1,0 +1,622 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header img {
+  width: 90px;
+}
+
+.header .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.header .service img {
+  width: 28px;
+  height: 28px;
+  margin: 0 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .service form {
+  margin: 0 15px;
+  padding: 10px 18px;
+}
+
+.header .service form input {
+  width: 180px;
+  height: 39px;
+  border: solid 3px #EB808A;
+  border-radius: 18px;
+  padding: 10px 18px;
+  font-family: "Roboto", sans-serif;
+  background: url(https://image.flaticon.com/icons/png/512/149/149852.png) no-repeat;
+  background-size: 20px;
+  background-position: right;
+  outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0;
+  }
+  .header img {
+    width: 70px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0;
+    margin-left: 12px;
+  }
+  .header .service img {
+    padding-right: 4px;
+  }
+}
+
+nav {
+  height: 38px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #EB808A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav label, nav input {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+  body nav {
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body nav {
+    width: 100%;
+    height: 100%;
+    background-color: #EB808A;
+    padding: 10px;
+  }
+  body nav label {
+    font-size: 35px;
+    color: white;
+    display: block;
+    cursor: pointer;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav #open-menu:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav #open-menu:checked + ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 55px;
+  margin-top: 10px;
+}
+
+.navbar .beauty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.navbar .beauty a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.navbar .beauty:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #EB808A;
+}
+
+.navbar .skin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.navbar .skin:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #E1DCE4;
+}
+
+.navbar .skin a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Reem Kufi", sans-serif;
+  padding-top: 15px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 15px;
+  height: 400px;
+  background-color: #EB808A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer h1 {
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: white;
+}
+
+.footer a {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.footer .contact-us p {
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.social-media {
+  background-color: #EB808A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media img {
+  width: 75px;
+  height: 75px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+  .footer .box {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .footer .contact-us p {
+    font-size: 15px;
+  }
+  .social-media img {
+    margin: 8px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 85px;
+}
+
+.category .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category .card h2 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 500;
+}
+
+.category .card img {
+  width: 400px;
+  border-radius: 9px;
+}
+
+.category .card img:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .category {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .category .card {
+    margin-top: 50px;
+  }
+  .category .card img {
+    padding: 0 30px;
+  }
+}
+
+.images {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.images .small {
+  padding: 0 15px;
+}
+
+.images .small img {
+  display: block;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  width: 250px;
+  border-radius: 30px;
+}
+
+.images .big img {
+  width: 450px;
+  height: 570px;
+  border-radius: 30px;
+  margin-top: -12px;
+}
+
+@media screen and (max-width: 768px) {
+  .images {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .images .small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .images .small img {
+    width: 206px;
+    padding: 20px 15px;
+  }
+  .images .big {
+    display: block;
+  }
+  .images .big img {
+    width: 426px;
+    padding: 20px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.hero img {
+  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 105px 0;
+}
+
+.products .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 550px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .card:hover {
+  margin: 40px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.products .card img {
+  width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products .card h3 {
+  font-family: "Reem Kufi", sans-serif;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.products .card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 45px;
+  margin-left: -17px;
+  font-size: 18px;
+}
+
+.products .card .btn {
+  margin: auto;
+  border: 2px solid #EB808A;
+  width: 280px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 5px;
+}
+
+.products .card .btn a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #EB808A;
+  font-family: "Reem Kufi", sans-serif;
+  padding: 9px 0px;
+}
+
+.products .card .btn a:hover {
+  color: white;
+}
+
+.products .card .btn:hover {
+  background-color: #EB808A;
+}
+
+.numbers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 180px;
+  margin-bottom: 50px;
+}
+
+.numbers .pagination {
+  display: inline-block;
+}
+
+.numbers .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.numbers .pagination a:hover {
+  background: #EB808A;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px 0;
+  }
+  .products .card {
+    margin: 40px 0;
+  }
+}
+/*# sourceMappingURL=sale.css.map */

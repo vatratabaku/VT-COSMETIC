@@ -1,0 +1,110 @@
+@import "./mixin";
+@import "./header";
+@import "./nav";
+@import "./navbar";
+@import "./footer";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.big{
+    margin-top: 50px;
+    font-family: $font1;
+    text-align: center;
+}
+.small{
+    font-family: $font1;
+    text-align: center;
+    margin-top: 40px;
+}
+.kkw{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+    img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        
+    
+    }
+}
+.fenty{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+
+    img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    
+    }
+
+}
+.revolution{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+
+    img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    
+    }
+
+}
+.brushes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+
+    img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    
+    }
+}
+.woman{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+
+    img{
+        width: 380px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 30px;
+        
+    
+    }
+}
+@media screen and (max-width:768px){
+    .box{
+        flex-direction: column;
+    }
+    
+
+
+}
